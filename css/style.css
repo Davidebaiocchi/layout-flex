@@ -3,3 +3,64 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* header */
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header {
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 200px;
+}
+
+nav {
+    width: 30%;
+}
+
+nav ul li {
+   list-style: none;
+}
+
+
+/* main */
+main {
+    background-color: blueviolet;
+    height: 1000px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+main .row {
+    display: flex;
+}
+
+main .column {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 30px 20px;
+}
+
+/* in  alternativa  flex-basis: calc (100% / 3) */
