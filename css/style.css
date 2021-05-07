@@ -21,6 +21,10 @@ a {
     justify-content: space-around;
 }
 
+.menu li:first-child{
+    order: 1;
+}
+
 header {
     display: flex;
     height: 80px;
@@ -55,12 +59,25 @@ main {
 
 main .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 main .column {
-    flex-basis: 0;
-    flex-grow: 1;
+    /* flex-basis: 0;
+    flex-grow: 1; */
     padding: 30px 20px;
+    flex-basis: calc(100% / 3);
 }
 
 /* in  alternativa  flex-basis: calc (100% / 3) */
+
+/* footer */
+footer {
+    display: flex;
+    background-color: brown;
+    justify-content: center;
+}
+
+footer nav ul {
+    text-align: center;
+}
